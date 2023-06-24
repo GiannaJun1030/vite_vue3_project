@@ -2,16 +2,20 @@
   "extends": "@vue/tsconfig/tsconfig.dom.json",
   "include": [
     "src/**/*.ts",
-    "src/**/*.d.ts",
     "src/**/*.tsx",
     "src/**/*.vue",
     "types/**/*.d.ts",
-    "types/**/*.ts"
+    "auto-imports.d.ts",
+    "components.d.ts"
   ],
   "exclude": ["src/**/__tests__/*", "node_modules", "dist", "**/*.js"],
   "compilerOptions": {
     "composite": true,
     "baseUrl": ".",
+    "noImplicitAny": false,
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "moduleResolution": "node",
     "paths": {
       "@/*": ["./src/*"]
     }
