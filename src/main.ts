@@ -2,7 +2,7 @@ import { createApp } from 'vue';
 import App from './App.vue';
 import router from './router';
 // 导入自定义样式
-import '@/styles/index.css';
+import '@/styles/index.scss';
 // 导入原子化css unocss
 import 'virtual:uno.css';
 import pinia from '@/stores/index';

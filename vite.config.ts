@@ -66,6 +66,14 @@ export default defineConfig(({ command, mode }) => {
         '@': fileURLToPath(new URL('./src', import.meta.url))
       }
     },
+    // sass混入
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: `@import '@/styles/theme.scss';`
+        }
+      }
+    },
     server: {
       proxy: {
         '/api': {
