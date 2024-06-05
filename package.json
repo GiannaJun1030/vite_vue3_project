@@ -1,6 +1,6 @@
 {
   "name": "vue3_ts_project",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "scripts": {
     "dev": "vite",
@@ -10,7 +10,7 @@
     "type-check": "vue-tsc --noEmit -p tsconfig.app.json --composite false",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
-    "patch": "release-it patch"
+    "patch": "release-it"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.1.0",
