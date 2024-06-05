@@ -56,7 +56,8 @@
         },
         "infile": "CHANGELOG.md",
         "ignoreRecommendedBump": true,
-        "strictSemVer": true
+        "strictSemVer": true,
+        "releaseCount": 0
       }
     },
     "git": {
